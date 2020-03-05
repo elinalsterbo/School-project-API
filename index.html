@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Work+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Project 1</title>
+</head>
+
+<body>
+
+  <!-- Top Navigation Menu -->
+  <nav class="topnav-start">
+    <a href="#home" class="active-start">PlanetFinder</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks-start">
+      <a href="exoplanets.html">Exoplanets</a>
+      <a href="#asteroids">Asteriods</a>
+      <!--To be continued-->
+      <a href="mars.html">Mars</a>
+      <a href="#pictureOfTheDay">Picture of the day</a>
+      <!--To be continued-->
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon-start" onclick="hamburgerMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+
+  <div class="main-container">
+    <div class="main-left">
+      <div id="logo"><a href="index.html">PlanetFinder</a></div>
+      <div id="slogan">
+        <h1>Discover the latest exoplanets and find out more about NASA</h1>
+        <p>Read the latest articles about exoplanets</p>
+        <button><a
+            href="https://exoplanets.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2C+created_at+desc&search=">Read
+            more</a></button>
+      </div>
+    </div>
+
+    <div class="main-right">
+      <ul>
+        <li><a href="exoplanets.html">Exoplanets</a></li>
+        <li><a href="#asteroids">Asteriods</a></li>
+        <!--To be continued-->
+        <li><a href="mars.html">Mars rover photos</a></li>
+        <li><a href="#pictureOfTheDay">Picture of the day</a></li>
+        <!--To be continued-->
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function hamburgerMenu() {
+      let x = document.getElementById("myLinks-start");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+</body>
+
+</html>
